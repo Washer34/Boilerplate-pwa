@@ -6,10 +6,10 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   plugins: [
     react(),
-    VitePWA({ 
+    VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
-      enabled: true
+        enabled: true,
       },
       manifest: {
         name: 'Boilerplate',
@@ -52,9 +52,8 @@ export default defineConfig({
             sizes: '16x16',
             type: 'image/png',
           },
-          
         ],
       },
-    })
+    }),
   ],
 });
